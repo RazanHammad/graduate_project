@@ -1,0 +1,71 @@
+$token = strpos($string, "(");
+$token=substr($string,$token+1,-1);
+$token = strtok($token, ";");
+$myArray=array();
+while ($token !== false)
+{
+    array_push($myArray,$token);
+    $token = strtok(";");
+}
+$content=array();
+foreach ($myArray as $item){
+    if (strpos($item, ':') !== false) {
+        array_push($content,$item);
+    }
+}
+foreach ($content as $ite){
+    echo $ite.'<br/>';
+}
+-------------------------------------------------
+$token = strpos($string, "(");
+$token=substr($string,$token+1,-1);
+$token = strtok($token, ";");
+$myArray=array();
+while ($token !== false)
+{
+    array_push($myArray,$token);
+    $token = strtok(";");
+}
+$content=array();
+foreach ($myArray as $item){
+    if (strpos($item, 'content') !== false) {
+        $i=strpos($item,':');
+        $item=substr($item,$i+1);
+        array_push($content,$item);
+    }
+}
+foreach ($content as $ite){
+    echo $ite.'<br/>';
+}
+-----------------------------------------------------
+foreach ($myArray as $item){
+    if (strpos($item, 'content') !== false) {
+        $i=strpos($item,':');
+        $item=substr($item,$i+1);
+        $item=json_decode($item);
+        array_push($content,$item);
+    }
+}
+
+----------------------------------------------------
+$token = strpos($string, "(");
+$token=substr($string,$token+1,-1);
+$token = strtok($token, ";");
+$myArray=array();
+while ($token !== false)
+{
+    array_push($myArray,$token);
+    $token = strtok(";");
+}
+$content=array();
+foreach ($myArray as $item){
+    if (strpos($item, 'content') !== false) {
+        $i=strpos($item,':');
+        $item=substr($item,$i+1);
+        $item=json_decode($item);
+        array_push($content,$item);
+    }
+}
+foreach ($content as $ite){
+    echo $ite.'<br/>';
+}

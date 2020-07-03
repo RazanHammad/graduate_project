@@ -88,8 +88,15 @@
                 </div>
                 <br>
                 <div class="links">
-                    <a href="/download">Download</a>
+                    <a href="/download">Download Rules</a>
+                   
+                      <a href="/decompress">Decompress Rules</a>
+                   
+                       <a href="/show">Show Rule File</a>
+                       
+                        <a href="/split">Split File Lines</a>
                 </div>
+
 
             </div>
         </div>

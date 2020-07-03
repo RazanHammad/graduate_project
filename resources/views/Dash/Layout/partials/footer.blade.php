@@ -1,0 +1,12 @@
+<!-- <footer class="page-footer pt-0 mt-5 mdb-color lighten-4">
+
+ 
+    <div class="footer-copyright py-3 text-center">
+      <div class="container-fluid">
+        © 2019 Copyright: <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+
+      </div>
+    </div>
+  
+
+  </footer>-->
